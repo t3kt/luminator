@@ -33,3 +33,4 @@ Desktop.ini
 # TouchDesigner
 # =========================
 controller/lumi.controller.*.toe
+renderer/lumi.renderer.test.*.toe
