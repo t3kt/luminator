@@ -1,0 +1,6 @@
+renderhost	localhost
+renderport	9500
+renderprotocol	reliablemsging
+ctrlhost	localhost
+ctrlport	9500
+ctrlprotocol	reliablemsging
