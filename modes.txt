@@ -1,0 +1,3 @@
+name	rendername	label
+off	none	
+test1	testrender1	test renderer 1
