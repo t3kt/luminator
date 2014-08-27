@@ -4,3 +4,7 @@ renderprotocol	reliablemsging
 ctrlhost	localhost
 ctrlport	9500
 ctrlprotocol	reliablemsging
+paramdefs	/_/local/paramdefs
+paramdefaults	/_/local/paramdefaults
+shareddir	../shared
+derezdir	../derez
