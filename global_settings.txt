@@ -6,6 +6,8 @@ ctrlport	9500
 ctrlprotocol	reliablemsging
 paramdefs	/_/local/paramdefs
 paramdefaults	/_/local/paramdefaults
+stateparamdefs	/_/local/stateparamdefs
+valparamdefs	/_/local/valparamdefs
 modes	/_/local/modes
 shareddir	../shared
 derezdir	../derez
