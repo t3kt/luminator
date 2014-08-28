@@ -1,4 +1,5 @@
 name	default
+mode	0
 param1	0.2
 param2	0.1
 param3	0.3
