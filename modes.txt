@@ -1,4 +1,4 @@
-name	rendername	label
-off	none	
-test1	testrender1	test renderer 1
-debug	debugrender	debug renderer
+name	rendername	auto	label
+off	none	0	
+test1	testrender1	1	test renderer 1
+test2	testrender2	1	test renderer 2
