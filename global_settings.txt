@@ -7,10 +7,17 @@ ctrlprotocol	reliablemsging
 paramdefs	/_/local/paramdefs
 stateparamdefs	/_/local/stateparamdefs
 valparamdefs	/_/local/valparamdefs
+evtparamdefs	/_/local/evtparamdefs
 paramdefaults	/_/local/paramdefaults
 stateparamdefaults	/_/local/stateparamdefaults
 valparamdefaults	/_/local/valparamdefaults
+evtparamdefaults	/_/local/evtparamdefaults
 modes	/_/local/modes
+paramvals	/_/paramvals
+stateparamvals	/_/stateparamvals
+valparamvals	/_/valparamvals
+evtparamvals	/_/evtparamvals
+curmode	/_/currentmode
 shareddir	../shared
 derezdir	../derez
 renderw	1280
