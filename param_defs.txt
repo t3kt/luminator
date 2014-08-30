@@ -5,3 +5,5 @@ param1	0.2	val
 param2	0.1	val
 param3	0.3	val
 param4	0.6	val
+event1	0	evt
+event2	0	evt
