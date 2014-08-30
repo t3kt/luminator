@@ -1,5 +1,6 @@
 name	default	type
 mode	0	state
+prevmode	0	state
 showdebug	0	state
 param1	0.2	val
 param2	0.1	val
