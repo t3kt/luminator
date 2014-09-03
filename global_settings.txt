@@ -1,3 +1,4 @@
+environment	localdev
 renderhost	localhost
 renderport	9500
 renderprotocol	reliablemsging
