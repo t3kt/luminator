@@ -5,9 +5,7 @@ def cook(scriptOP):
 	zonetbl = op('zones')
 	for i in range(1, zonetbl.numRows):
 		ch = scriptOP.appendChan(zonetbl[i, 'event'])
-		if not tracked:
-			ch.vals = [0]
-		elif float(zonetbl[i, 'umin'].val) <= u < float(zonetbl[i, 'umax'].val) and float(zonetbl[i, 'vmin'].val) <= v < float(zonetbl[i, 'vmax'].val):
+		if tracked and float(zonetbl[i, 'umin'].val) <= u < float(zonetbl[i, 'umax'].val) and float(zonetbl[i, 'vmin'].val) <= v < float(zonetbl[i, 'vmax'].val):
 			ch.vals = [1]
 		else:
 			ch.vals = [0]

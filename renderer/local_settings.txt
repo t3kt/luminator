@@ -1,4 +1,1 @@
-paramvals	/_/paramvals
-stateparamvals	/_/stateparamvals
-valparamvals	/_/valparamvals
-curmode	/_/currentmode
+
