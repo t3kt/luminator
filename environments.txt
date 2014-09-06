@@ -7,3 +7,5 @@ ctrlport	9500	9500
 ctrlprotocol	reliablemsging	reliablemsging
 renderw	1280	1280
 renderh	720	720
+midictlout	1	1
+midictlin	1	1
