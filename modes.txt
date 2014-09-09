@@ -1,4 +1,4 @@
 name	rendername	auto	label
 off	none	0	
-test1	testrender1	1	test renderer 1
-test2	testrender2	1	test renderer 2
+test1	cubespinrender	1	cube spin
+test2	mandalarender	1	mandala
