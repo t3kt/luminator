@@ -1,0 +1,3 @@
+name	renderername	settings	controls	renderertox
+basiccubes	cubespin	~/modes/settings.basic.txt	~/modes/controls.basic.txt	~/renderer/l.render.cubespin.tox
+basicmandala	mandala	~/modes/settings.basic.txt	~/modes/controls.basic.txt	~/renderer/l.render.mandala.tox
