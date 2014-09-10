@@ -30,6 +30,7 @@ Variables are used to make values available to components within the various sys
 Variable values come from a combination of several sources, where each successive source can override values from the previous sources.
 
 Variable Sources (sources are overriden by those below them):
+
 Source | Description
 -------|------------
 global settings | globally shared system settings
