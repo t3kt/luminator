@@ -29,8 +29,14 @@ Each mode has:
 Variables are used to make values available to components within the various systems and components.
 Variable values come from a combination of several sources, where each successive source can override values from the previous sources.
 
-Variable Sources:
-* TODO: list variable sources
+Variable Sources (sources are overriden by those below them):
+Source | Description
+-------|------------
+global settings | globally shared system settings
+local settings | settings local to each system (Input/Control and Renderer), but not specific to a particular mode
+environment settings | settings based on the environment in which a system is running, for things like host names and MIDI ports
+mode settings - basic | settings based on the current system mode, based on the mode list file, which is mostly just paths to other settings files
+mode settings - additional | settings based on the current system mode, based on the settings file referenced by the basic mode settings
 
 Common Variables:
 * TODO: list commonly used variables
@@ -50,5 +56,5 @@ core.tox | the shared system core component which processes settings files, gene
 modes.tox | the shared system component which processes system modes and generates settings, etc based on the current mode
 modelist.txt | list of the system modes, specifying which settings files and components each mode uses
 param_defs.txt | definitions for system (not mode-specific) parameters
-environments.txt | definitions for various environments in which the system can run, including settings for host names, midi ports, etc
+environments.txt | definitions for various environments in which the system can run, including settings for host names and MIDI ports
 global_settings.txt | globally shared settings, which can be overridden by local settings, mode settings, environment settings, etc
