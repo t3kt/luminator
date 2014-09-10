@@ -1,1 +1,2 @@
 rootdir	..
+modes	/_/local/zmodes
