@@ -35,6 +35,7 @@ Desktop.ini
 
 # TouchDesigner
 # =========================
+CrashAutoSave.toe
 controller/lumi.controller.*.toe
 renderer/lumi.renderer.*.toe
 lumi-output-*
