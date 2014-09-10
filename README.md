@@ -25,6 +25,16 @@ Each mode has:
 * Output sent to OSC/MIDI/DAT channels based on the mode's parameter/event definitions (this isn't really its own mode-specific component, but it's worth mentioning anyway)
 * Additionally, other things...?
 
+## Variables
+Variables are used to make values available to components within the various systems and components.
+Variable values come from a combination of several sources, where each successive source can override values from the previous sources.
+
+Variable Sources:
+* TODO: list variable sources
+
+Common Variables:
+* TODO: list commonly used variables
+
 ## Files/Directories
 File/Directory | Description
 ---------------|------------
