@@ -1,3 +1,2 @@
 inputvals	/_/inputvals
 rootdir	..
-modes	/_/local/zmodes
