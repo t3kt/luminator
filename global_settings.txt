@@ -21,5 +21,6 @@ evtparamvals	/_/evtparamvals
 curmode	/_/currentmode
 shareddir	../shared
 derezdir	../derez
+datadir	../data
 renderw	1280
 renderh	720
