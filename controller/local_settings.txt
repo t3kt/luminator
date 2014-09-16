@@ -1,3 +1,4 @@
 inputvals	/_/inputvals
 rootdir	..
 depthstream	/_/depthstream
+kinectpatterns	p?/id p?/head:* p?/head_tracked p?/hand_[lr]:* p?/hand_[lr]_tracked p?/knee_[lr]:* p?/knee_[lr]_tracked p?/ankle_[lr]:* p?/ankle_[lr]_tracked p?/[trbl]_clipped p?/engaged p?/hand_[lr]_open p?/hand_[lr]_closed
