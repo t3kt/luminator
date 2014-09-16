@@ -7,7 +7,7 @@ def cook(scriptOP):
 		xbounds = float(zonetbl[i, 'xmin']), float(zonetbl[i, 'xmax'])
 		zbounds = float(zonetbl[i, 'zmin']), float(zonetbl[i, 'zmax'])
 		ch = scriptOP.appendChan(zonetbl[i, 'event'])
-		if tracked and xbounds[0] <= x < xbounds and zbounds[0] <= z < zbounds[1]:
+		if tracked and xbounds[0] <= x < xbounds[1] and zbounds[0] <= z < zbounds[1]:
 			ch.vals = [1]
 		else:
 			ch.vals = [0]
