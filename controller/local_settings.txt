@@ -4,6 +4,8 @@ depthstream	/_/depthstream
 inputpoints	/_/inputpoints
 inputstatuses	/_/inputstatuses
 inputdeltas	/_/inputdeltas
+kinectrecordings	/_/input/kinectrecordings
+properties	/_/properties
 kinectplayers	p[1-6]
 kinectjoints	head spine hand_[lr] knee_[lr] ankle_[lr]
 kinectstatuses	~/id ~/head_tracked ~/spine_tracked ~/hand_[lr]_tracked ~/knee_[lr]_tracked ~/ankle_[lr]_tracked ~/engaged ~/hand_[lr]_open ~/hand_[lr]_closed
