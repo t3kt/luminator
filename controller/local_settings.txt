@@ -5,6 +5,7 @@ inputpoints	/_/inputpoints
 inputstatuses	/_/inputstatuses
 inputdeltas	/_/inputdeltas
 kinectrecordings	/_/input/kinectrecordings
+kinectbounds	/_/kinectbounds
 properties	/_/properties
 kinectplayers	p[1-6]
 kinectjoints	head spine hand_[lr] knee_[lr] ankle_[lr]
