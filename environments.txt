@@ -13,5 +13,5 @@ kinectxmin	-1	-1
 kinectxmax	.25	.25
 kinectymin	-.75	-.75
 kinectymax	.75	.75
-kinectzmin	0.25	0.25
+kinectzmin	-.1	-.1
 kinectzmax	2	2
