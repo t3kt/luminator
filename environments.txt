@@ -15,3 +15,13 @@ kinectymin	-.75	-.75
 kinectymax	.75	.75
 kinectzmin	-.1	-.1
 kinectzmax	2	2
+kinectpretransform	0	0
+kinectpretranslatex	0	0
+kinectpretranslatey	0	0
+kinectpretranslatez	0	0
+kinectprerotatex	0	0
+kinectprerotatey	0	0
+kinectprerotatez	0	0
+kinectprescalex	1	1
+kinectprescaley	1	1
+kinectprescalez	1	1
