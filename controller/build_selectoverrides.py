@@ -16,5 +16,5 @@ def prep_names(players, names_str):
 		return ''
 	names = names_str.split(' ')
 	for i in range(len(names)):
-		names[i] = names[i].replace('~', players)
+		names[i] = names[i].replace('@', players)
 	return ' '.join(names)

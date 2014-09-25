@@ -19,8 +19,9 @@ stateparamvals	/_/stateparamvals
 valparamvals	/_/valparamvals
 evtparamvals	/_/evtparamvals
 curmode	/_/currentmode
-shareddir	../shared
-derezdir	../derez
-datadir	../data
+shareddir	~/shared
+derezdir	~/derez
+datadir	~/data
+contentdir	~/content
 renderw	1280
 renderh	720

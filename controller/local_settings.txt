@@ -9,8 +9,8 @@ kinectbounds	/_/kinectbounds
 properties	/_/properties
 kinectplayers	p[1-6]
 kinectjoints	head spine hand_[lr] knee_[lr] ankle_[lr]
-kinectstatuses	~/id ~/head_tracked ~/spine_tracked ~/hand_[lr]_tracked ~/knee_[lr]_tracked ~/ankle_[lr]_tracked ~/engaged ~/hand_[lr]_open ~/hand_[lr]_closed
-kinectpoints	~/head:t[xyz] ~/spine:t[xyz] ~/hand_[lr]:t[xyz] ~/knee_[lr]:t[xyz] ~/ankle_[lr]:t[xyz]
+kinectstatuses	{kinectplayers}/id {kinectplayers}/head_tracked {kinectplayers}/spine_tracked {kinectplayers}/hand_[lr]_tracked {kinectplayers}/knee_[lr]_tracked {kinectplayers}/ankle_[lr]_tracked {kinectplayers}/engaged {kinectplayers}/hand_[lr]_open {kinectplayers}/hand_[lr]_closed
+kinectpoints	{kinectplayers}/head:t[xyz] {kinectplayers}/spine:t[xyz] {kinectplayers}/hand_[lr]:t[xyz] {kinectplayers}/knee_[lr]:t[xyz] {kinectplayers}/ankle_[lr]:t[xyz]
 kinectscaledxmin	-1
 kinectscaledxmax	1
 kinectscaledymin	0
