@@ -3,18 +3,19 @@ It does stuff. It's awesome.
 
 ## Input/Control System
 
-The input/control system takes the inputs that 
+The input/control system takes input from the kinect, analyzes it, and sends it out to the other systems. It consists of the following sub-systems:
 
 * Input (Kinect)
-* Input Processing - takes input values and generates parameter values and events
-* State - takes input/parameter values and events and generates state values, including the current system mode
-* Output - takes parameter values, events, and state values and transmits them through various protocols to external systems, including MIDI, OSC, and TouchDesigner native DAT protocol
+* Input Processing - takes input values and generates parameter values
+* Output - takes parameter values and transmits them to external systems through various protocols, including MIDI, OSC, and TouchDesigner native DAT protocol
 
 ## Renderer System
 
 * ...
 
 ## Modes
+
+!!! NOTE: the modes system is going to be removed (see #29)
 
 The system as a whole is in one of several distinct modes at any given time. It switches modes based periodically or in response to input.
 
