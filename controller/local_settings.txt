@@ -6,11 +6,12 @@ inputstatuses	/_/inputstatuses
 inputdeltas	/_/inputdeltas
 kinectrecordings	/_/input/kinectrecordings
 kinectbounds	/_/kinectbounds
+cells	/_/cells
 properties	/_/properties
 kinectplayers	p[1-6]
-kinectjoints	head spine hand_[lr] knee_[lr] ankle_[lr]
-kinectstatuses	{kinectplayers}/id {kinectplayers}/head_tracked {kinectplayers}/spine_tracked {kinectplayers}/hand_[lr]_tracked {kinectplayers}/knee_[lr]_tracked {kinectplayers}/ankle_[lr]_tracked {kinectplayers}/engaged {kinectplayers}/hand_[lr]_open {kinectplayers}/hand_[lr]_closed
-kinectpoints	{kinectplayers}/head:t[xyz] {kinectplayers}/spine:t[xyz] {kinectplayers}/hand_[lr]:t[xyz] {kinectplayers}/knee_[lr]:t[xyz] {kinectplayers}/ankle_[lr]:t[xyz]
+kinectjoints	head spine hand_[lr] ankle_[lr]
+kinectstatuses	{kinectplayers}/id {kinectplayers}/head_tracked {kinectplayers}/spine_tracked {kinectplayers}/hand_[lr]_tracked {kinectplayers}/ankle_[lr]_tracked
+kinectpoints	{kinectplayers}/head:t[xyz] {kinectplayers}/spine:t[xyz] {kinectplayers}/hand_[lr]:t[xyz] {kinectplayers}/ankle_[lr]:t[xyz]
 kinectscaledxmin	-1
 kinectscaledxmax	1
 kinectscaledymin	0

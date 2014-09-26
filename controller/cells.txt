@@ -1,0 +1,10 @@
+id	xmin	xmax	zmin	zmax
+cell_a	0	1/3	0	1/3
+cell_b	1/3	2/3	0	1/3
+cell_c	2/3	1	0	1/3
+cell_d	0	1/3	1/3	2/3
+cell_e	1/3	2/3	1/3	2/3
+cell_f	2/3	1	1/3	2/3
+cell_g	0	1/3	2/3	1
+cell_h	1/3	2/3	2/3	1
+cell_i	2/3	1	2/3	1
