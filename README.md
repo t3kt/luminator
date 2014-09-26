@@ -15,7 +15,7 @@ The input/control system takes input from the kinect, analyzes it, and sends it 
 
 ## Modes
 
-!!! NOTE: the modes system is going to be removed (see #29)
+!!! NOTE: the modes system is going to be removed - see issue #29
 
 The system as a whole is in one of several distinct modes at any given time. It switches modes based periodically or in response to input.
 
