@@ -5,6 +5,7 @@ inputpoints	/_/inputpoints
 inputstatuses	/_/inputstatuses
 inputdeltas	/_/inputdeltas
 playerstatuses	/_/playerstatuses
+activeplayers	/_/activeplayers
 kinectrecordings	/_/input/kinectrecordings
 kinectbounds	/_/kinectbounds
 cells	/_/cells
