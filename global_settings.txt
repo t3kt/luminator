@@ -18,6 +18,7 @@ paramvals	/_/paramvals
 stateparamvals	/_/stateparamvals
 valparamvals	/_/valparamvals
 evtparamvals	/_/evtparamvals
+cellparamvals	/_/cellparamvals
 curmode	/_/currentmode
 shareddir	~/shared
 derezdir	~/derez
