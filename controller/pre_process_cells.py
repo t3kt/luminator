@@ -5,8 +5,8 @@ def cook(dat):
 	numz = max(cellsin.col('cellz')[1:])
 	dat.appendRow(cellsin.row(0)+ ['xmin', 'xmax', 'zmin', 'zmax'])
 	bounds = op('kinectbounds')
-	xbounds = float(bounds['kinectxmin', 1].val), float(bounds['kinectxmax', 1].val)
-	zbounds = float(bounds['kinectzmin', 1].val), float(bounds['kinectzmax', 1].val)
+	xbounds = float(dat.var('kinectscaledxmin')), float(dat.var('kinectscaledxmax'))
+	zbounds = float(dat.var('kinectscaledzmin')), float(dat.var('kinectscaledzmax'))
 	for i in range(1, cellsin.numRows):
 		x, z = int(cellsin[i, 'cellx']), int(cellsin[i, 'cellz'])
 		parts = cellsin.row(i)
