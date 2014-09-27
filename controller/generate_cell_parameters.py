@@ -4,6 +4,7 @@ def cook(scriptOP):
 	handsin = scriptOP.inputs[1]
 	activecount = 0
 	firstactive = 0
+	centerx, centerz = scriptOP.par.value0x, scriptOP.par.value0z
 	playername = None
 	for i in range(playersin.numChans):
 		playerch = playersin[i]
@@ -24,12 +25,12 @@ def cook(scriptOP):
 		addchan(scriptOP, 'hand_r:ty', 0)
 		addchan(scriptOP, 'hand_r:tz', 0)
 	else:
-		addchan(scriptOP, 'hand_l:tx', handsin[playername + '/hand_l:tx'])
+		addchan(scriptOP, 'hand_l:tx', handsin[playername + '/hand_l:tx'] - centerx)
 		addchan(scriptOP, 'hand_l:ty', handsin[playername + '/hand_l:ty'])
-		addchan(scriptOP, 'hand_l:tz', handsin[playername + '/hand_l:tz'])
-		addchan(scriptOP, 'hand_r:tx', handsin[playername + '/hand_r:tx'])
+		addchan(scriptOP, 'hand_l:tz', handsin[playername + '/hand_l:tz'] - centerz)
+		addchan(scriptOP, 'hand_r:tx', handsin[playername + '/hand_r:tx'] - centerx)
 		addchan(scriptOP, 'hand_r:ty', handsin[playername + '/hand_r:ty'])
-		addchan(scriptOP, 'hand_r:tz', handsin[playername + '/hand_r:tz'])
+		addchan(scriptOP, 'hand_r:tz', handsin[playername + '/hand_r:tz'] - centerz)
 
 def addchan(chop, name, val):
 	chop.appendChan(name)[0] = val
