@@ -9,11 +9,11 @@ cells	/_/core/cells
 paramdefs	/_/core/paramdefs
 paramdefaults	/_/core/paramdefaults
 paramvals	/_/paramvals
-shareddir	~/shared
-derezdir	~/derez
-datadir	~/data
-contentdir	~/content
-scriptsdir	~/scripts
+shareddir	{rootdir}/shared
+derezdir	{rootdir}/derez
+datadir	{rootdir}/data
+contentdir	{rootdir}/content
+scriptsdir	{rootdir}/scripts
 renderw	1280
 renderh	720
 kinectplayers	p[1-6]

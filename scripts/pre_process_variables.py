@@ -13,6 +13,5 @@ def get_pre_var(varname, prevars):
 	return cell.val if cell is not None else '{varname}'
 
 def pre_proc_value(val, replace_var):
-	val = val.replace('~', '{rootdir}')
 	val = re.sub(r'\{(?P<var>[a-z]+)\}', replace_var, val)
 	return val
