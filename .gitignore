@@ -38,5 +38,6 @@ Desktop.ini
 CrashAutoSave.toe
 controller/lumi.controller.*.toe
 renderer/lumi.renderer.*.toe
+sunset/Sunset.*.toe
 lumi-output-*
 content/**
