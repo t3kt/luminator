@@ -14,6 +14,7 @@ derezdir	{rootdir}/derez
 datadir	{rootdir}/data
 contentdir	{rootdir}/content
 scriptsdir	{rootdir}/scripts
+componentsdir	{rootdir}/components
 renderw	1280
 renderh	720
 kinectplayers	p[1-6]
