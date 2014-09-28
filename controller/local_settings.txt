@@ -9,7 +9,6 @@ activeplayers	/_/activeplayers
 players	/_/players
 kinectrecordings	/_/input/kinectrecordings
 kinectbounds	/_/kinectbounds
-cells	/_/cells
 properties	/_/properties
 kinectplayers	p[1-6]
 kinectjoints	head spine hand_[lr] ankle_[lr]

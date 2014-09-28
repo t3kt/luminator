@@ -1,0 +1,10 @@
+id	cellx	cellz
+cell_a	0	0
+cell_b	0	1
+cell_c	0	2
+cell_d	1	0
+cell_e	1	1
+cell_f	1	2
+cell_g	2	0
+cell_h	2	1
+cell_i	2	2
