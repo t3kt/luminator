@@ -35,7 +35,9 @@ def cook(scriptOP):
 		addchan(scriptOP, 'hand_r:ty', handsin[playername + '/hand_r:ty'], ybounds, ybounds)
 		addchan(scriptOP, 'hand_r:tz', handsin[playername + '/hand_r:tz'], zbounds, xzoutbounds)
 
-def addchan(chop, name, val, inrange, outrange):
+def addchan(chop, name, val, inrange = None, outrange = None):
+	if inrange is not None:
+		val = scale(val, inrange, outrange)
 	chop.appendChan(name)[0] = val
 
 def scale(x, inrange, outrange):
