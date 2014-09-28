@@ -41,3 +41,4 @@ renderer/lumi.renderer.*.toe
 sunset/Sunset.*.toe
 lumi-output-*
 content/**
+*.dmp
