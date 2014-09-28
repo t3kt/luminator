@@ -16,3 +16,13 @@ contentdir	~/content
 scriptsdir	~/scripts
 renderw	1280
 renderh	720
+kinectplayers	p[1-6]
+kinectjoints	head spine hand_[lr] ankle_[lr]
+kinectstatuses	{kinectplayers}/id {kinectplayers}/head_tracked {kinectplayers}/spine_tracked {kinectplayers}/hand_[lr]_tracked {kinectplayers}/ankle_[lr]_tracked
+kinectpoints	{kinectplayers}/head:t[xyz] {kinectplayers}/spine:t[xyz] {kinectplayers}/hand_[lr]:t[xyz] {kinectplayers}/ankle_[lr]:t[xyz]
+kinectscaledxmin	-1
+kinectscaledxmax	1
+kinectscaledymin	0
+kinectscaledymax	1
+kinectscaledzmin	0
+kinectscaledzmax	1
