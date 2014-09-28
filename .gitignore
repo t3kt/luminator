@@ -36,9 +36,7 @@ Desktop.ini
 # TouchDesigner
 # =========================
 CrashAutoSave.toe
-controller/lumi.controller.*.toe
-renderer/lumi.renderer.*.toe
-sunset/Sunset.*.toe
+*.[0-9]*.toe
 lumi-output-*
 content/**
 *.dmp
