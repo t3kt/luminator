@@ -16,6 +16,7 @@ The input/control system takes input from the kinect, analyzes it, and sends it 
 ## Variables
 Variables are used to make values available to components within the various systems and components.
 Variable values come from a combination of several sources, where each successive source can override values from the previous sources.
+
 Variables can specify values that are calculated from expressions (in __TScript__), and can be based on the value of other variables. In order to avoid cyclic dependencies, a variables that are defined using the calculated value of another variable may not work correctly. To insert references to the variables, rather than using the standard $somevar syntax, the following format is used:
 ```
 somevar {anothervar} + 5
@@ -70,8 +71,17 @@ kinectscaledymax | Maximum Y value of the range that coordinates are scaled to
 kinectscaledzmin | Minimum Z value of the range that coordinates are scaled to
 kinectscaledzmax | Maximum Z value of the range that coordinates are scaled to
 
-
 * TODO: document more variables
+
+## Coordinates
+
+Point coordinates are used in several places in the system. The meaning of these values depends on which coordinate space they were scaled to.
+
+The raw values from the Kinect are first passed through a tranform, which can be used to correct for the positioning and angle of the Kinect. These corrected values are considered to be in __world space__, which means that they use whatever units the Kinect outputs natively, which correspond to some sort of physical unit of measure.
+
+The __world space__ coordinates are then scaled to normalized ranges, such as -1 to 1 for X and Z, and 0 to 1 for Y. These values are considered to be in the __global scaled space__. The conversion from __global scaled space__ is based on system/environment settings.
+
+Within the control processing for each grid cell, the __global scaled space__ values are scaled relative to the bounds of the cell. So, if a user is standing in a cell, and their hand is all the way to the left side of that cell, its X coordinate would be 1 and the right side would be -1. These values are considered to be in the __cell space__. The per-cell values that the control system sends out to the other systems are in the __cell space__.
 
 ## Files/Directories
 File/Directory | Description
