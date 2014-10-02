@@ -25,5 +25,5 @@ kinectscaledxmin	-1
 kinectscaledxmax	1
 kinectscaledymin	0
 kinectscaledymax	1
-kinectscaledzmin	0
+kinectscaledzmin	-1
 kinectscaledzmax	1
