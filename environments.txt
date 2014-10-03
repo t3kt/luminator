@@ -1,27 +1,27 @@
-environment	localdev	networkdevtekt
-renderhost	localhost	192.168.1.110
-renderport	9500	9500
-renderprotocol	reliablemsging	reliablemsging
-ctrlhost	localhost	192.168.1.100
-ctrlport	9500	9500
-ctrlprotocol	reliablemsging	reliablemsging
-renderw	1280	1280
-renderh	720	720
-midictlout	1	1
-midictlin	1	1
-kinectxmin	-1	-1
-kinectxmax	.25	.25
-kinectymin	-.75	-.75
-kinectymax	.75	.75
-kinectzmin	-.1	-.1
-kinectzmax	2	2
-kinectpretransform	0	0
-kinectpretranslatex	0	0
-kinectpretranslatey	0	0
-kinectpretranslatez	0	0
-kinectprerotatex	0	0
-kinectprerotatey	0	0
-kinectprerotatez	0	0
-kinectprescalex	1	1
-kinectprescaley	1	1
-kinectprescalez	1	1
+environment	localdev	networkdevtekt	asylumtest
+renderhost	localhost	192.168.1.110	localhost
+renderport	9500	9500	9500
+renderprotocol	reliablemsging	reliablemsging	reliablemsging
+ctrlhost	localhost	192.168.1.100	localhost
+ctrlport	9500	9500	9500
+ctrlprotocol	reliablemsging	reliablemsging	reliablemsging
+renderw	1280	1280	1280
+renderh	720	720	720
+midictlout	1	1	1
+midictlin	1	1	1
+kinectxmin	-1	-1	-1
+kinectxmax	.25	.25	.25
+kinectymin	-.75	-.75	-.75
+kinectymax	.75	.75	.75
+kinectzmin	-.1	-.1	-.1
+kinectzmax	2	2	2
+kinectpretransform	0	0	0
+kinectpretranslatex	0	0	0
+kinectpretranslatey	0	0	0
+kinectpretranslatez	0	0	0
+kinectprerotatex	0	0	0
+kinectprerotatey	0	0	0
+kinectprerotatez	0	0	0
+kinectprescalex	1	1	1
+kinectprescaley	1	1	1
+kinectprescalez	1	1	1
