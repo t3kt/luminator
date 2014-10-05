@@ -5,9 +5,9 @@ def cook(scriptOP):
 	activecount = 0
 	firstactive = 0
 	xbounds = scriptOP.par.value0x, scriptOP.par.value1x
+	ybounds = scriptOP.par.value0y, scriptOP.par.value1y
 	zbounds = scriptOP.par.value0z, scriptOP.par.value1z
-	xzoutbounds = -1, 1
-	ybounds = 0, 1
+	outbounds = 0, 1
 	playername = None
 	for i in range(playersin.numChans):
 		playerch = playersin[i]
@@ -28,12 +28,12 @@ def cook(scriptOP):
 		addchan(scriptOP, 'hand_r:ty', 0)
 		addchan(scriptOP, 'hand_r:tz', 0)
 	else:
-		addchan(scriptOP, 'hand_l:tx', handsin[playername + '/hand_l:tx'], xbounds, xzoutbounds)
-		addchan(scriptOP, 'hand_l:ty', handsin[playername + '/hand_l:ty'], ybounds, ybounds)
-		addchan(scriptOP, 'hand_l:tz', handsin[playername + '/hand_l:tz'], zbounds, xzoutbounds)
-		addchan(scriptOP, 'hand_r:tx', handsin[playername + '/hand_r:tx'], xbounds, xzoutbounds)
-		addchan(scriptOP, 'hand_r:ty', handsin[playername + '/hand_r:ty'], ybounds, ybounds)
-		addchan(scriptOP, 'hand_r:tz', handsin[playername + '/hand_r:tz'], zbounds, xzoutbounds)
+		addchan(scriptOP, 'hand_l:tx', handsin[playername + '/hand_l:tx'], xbounds, outbounds)
+		addchan(scriptOP, 'hand_l:ty', handsin[playername + '/hand_l:ty'], ybounds, outbounds)
+		addchan(scriptOP, 'hand_l:tz', handsin[playername + '/hand_l:tz'], zbounds, outbounds)
+		addchan(scriptOP, 'hand_r:tx', handsin[playername + '/hand_r:tx'], xbounds, outbounds)
+		addchan(scriptOP, 'hand_r:ty', handsin[playername + '/hand_r:ty'], ybounds, outbounds)
+		addchan(scriptOP, 'hand_r:tz', handsin[playername + '/hand_r:tz'], zbounds, outbounds)
 
 def addchan(chop, name, val, inrange = None, outrange = None):
 	if inrange is not None:

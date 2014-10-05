@@ -8,5 +8,4 @@ playerstatuses	/_/playerstatuses
 activeplayers	/_/activeplayers
 players	/_/players
 kinectrecordings	/_/input/kinectrecordings
-kinectbounds	/_/kinectbounds
 properties	/_/properties

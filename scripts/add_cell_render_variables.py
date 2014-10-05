@@ -2,8 +2,8 @@ def cook(dat):
 	dat.clear()
 	cellsin = dat.inputs[0]
 	dat.appendRow(cellsin.row(0) + ['cellrenderw', 'cellrenderh', 'cellrendertx', 'cellrenderty'])
-	gridxrange = float(var('kinectscaledxmin')), float(var('kinectscaledxmax'))
-	gridzrange = float(var('kinectscaledzmin')), float(var('kinectscaledzmax'))
+	gridxrange = float(var('kinectxmin')), float(var('kinectxmax'))
+	gridzrange = float(var('kinectzmin')), float(var('kinectzmax'))
 	gridw = gridxrange[1] - gridxrange[0]
 	gridh = gridzrange[1] - gridzrange[0]
 	renderw, renderh = float(var('renderw')), float(var('renderh'))
