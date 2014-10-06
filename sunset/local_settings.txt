@@ -1,1 +1,6 @@
 rootdir	..
+cloudNoise	cell_a
+cloudHue	cell_d
+ringFeedback	cell_f
+sunFeedback	cell_g
+waterFlow	cell_h
