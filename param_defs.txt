@@ -1,83 +1,83 @@
 name	default	midi
-cell_a/active	0
+cell_a/active	0	n0
 cell_a/activecount	0
 cell_a/activeplayer	0
-cell_a/hand_l:tx	0
-cell_a/hand_l:ty	0
-cell_a/hand_l:tz	0
-cell_a/hand_r:tx	0
-cell_a/hand_r:ty	0
-cell_a/hand_r:tz	0
-cell_b/active	0
+cell_a/hand_l:tx	0	cc0
+cell_a/hand_l:ty	0	cc1
+cell_a/hand_l:tz	0	cc2
+cell_a/hand_r:tx	0	cc3
+cell_a/hand_r:ty	0	cc4
+cell_a/hand_r:tz	0	cc5
+cell_b/active	0	n1
 cell_b/activecount	0
 cell_b/activeplayer	0
-cell_b/hand_l:tx	0
-cell_b/hand_l:ty	0
-cell_b/hand_l:tz	0
-cell_b/hand_r:tx	0
-cell_b/hand_r:ty	0
-cell_b/hand_r:tz	0
-cell_c/active	0
+cell_b/hand_l:tx	0	cc10
+cell_b/hand_l:ty	0	cc11
+cell_b/hand_l:tz	0	cc12
+cell_b/hand_r:tx	0	cc13
+cell_b/hand_r:ty	0	cc14
+cell_b/hand_r:tz	0	cc15
+cell_c/active	0	n2
 cell_c/activecount	0
 cell_c/activeplayer	0
-cell_c/hand_l:tx	0
-cell_c/hand_l:ty	0
-cell_c/hand_l:tz	0
-cell_c/hand_r:tx	0
-cell_c/hand_r:ty	0
-cell_c/hand_r:tz	0
-cell_d/active	0
+cell_c/hand_l:tx	0	cc20
+cell_c/hand_l:ty	0	cc21
+cell_c/hand_l:tz	0	cc22
+cell_c/hand_r:tx	0	cc23
+cell_c/hand_r:ty	0	cc24
+cell_c/hand_r:tz	0	cc25
+cell_d/active	0	n3
 cell_d/activecount	0
 cell_d/activeplayer	0
-cell_d/hand_l:tx	0
-cell_d/hand_l:ty	0
-cell_d/hand_l:tz	0
-cell_d/hand_r:tx	0
-cell_d/hand_r:ty	0
-cell_d/hand_r:tz	0
-cell_e/active	0
+cell_d/hand_l:tx	0	cc30
+cell_d/hand_l:ty	0	cc31
+cell_d/hand_l:tz	0	cc32
+cell_d/hand_r:tx	0	cc33
+cell_d/hand_r:ty	0	cc34
+cell_d/hand_r:tz	0	cc35
+cell_e/active	0	n4
 cell_e/activecount	0
 cell_e/activeplayer	0
-cell_e/hand_l:tx	0
-cell_e/hand_l:ty	0
-cell_e/hand_l:tz	0
-cell_e/hand_r:tx	0
-cell_e/hand_r:ty	0
-cell_e/hand_r:tz	0
-cell_f/active	0
+cell_e/hand_l:tx	0	cc40
+cell_e/hand_l:ty	0	cc41
+cell_e/hand_l:tz	0	cc42
+cell_e/hand_r:tx	0	cc43
+cell_e/hand_r:ty	0	cc44
+cell_e/hand_r:tz	0	cc45
+cell_f/active	0	n5
 cell_f/activecount	0
 cell_f/activeplayer	0
-cell_f/hand_l:tx	0
-cell_f/hand_l:ty	0
-cell_f/hand_l:tz	0
-cell_f/hand_r:tx	0
-cell_f/hand_r:ty	0
-cell_f/hand_r:tz	0
-cell_g/active	0
+cell_f/hand_l:tx	0	cc50
+cell_f/hand_l:ty	0	cc51
+cell_f/hand_l:tz	0	cc52
+cell_f/hand_r:tx	0	cc53
+cell_f/hand_r:ty	0	cc54
+cell_f/hand_r:tz	0	cc55
+cell_g/active	0	n6
 cell_g/activecount	0
 cell_g/activeplayer	0
-cell_g/hand_l:tx	0
-cell_g/hand_l:ty	0
-cell_g/hand_l:tz	0
-cell_g/hand_r:tx	0
-cell_g/hand_r:ty	0
-cell_g/hand_r:tz	0
-cell_h/active	0
+cell_g/hand_l:tx	0	cc60
+cell_g/hand_l:ty	0	cc61
+cell_g/hand_l:tz	0	cc62
+cell_g/hand_r:tx	0	cc63
+cell_g/hand_r:ty	0	cc64
+cell_g/hand_r:tz	0	cc65
+cell_h/active	0	n7
 cell_h/activecount	0
 cell_h/activeplayer	0
-cell_h/hand_l:tx	0
-cell_h/hand_l:ty	0
-cell_h/hand_l:tz	0
-cell_h/hand_r:tx	0
-cell_h/hand_r:ty	0
-cell_h/hand_r:tz	0
-cell_i/active	0
+cell_h/hand_l:tx	0	cc70
+cell_h/hand_l:ty	0	cc71
+cell_h/hand_l:tz	0	cc72
+cell_h/hand_r:tx	0	cc73
+cell_h/hand_r:ty	0	cc74
+cell_h/hand_r:tz	0	cc75
+cell_i/active	0	n8
 cell_i/activecount	0
 cell_i/activeplayer	0
-cell_i/hand_l:tx	0
-cell_i/hand_l:ty	0
-cell_i/hand_l:tz	0
-cell_i/hand_r:tx	0
-cell_i/hand_r:ty	0
-cell_i/hand_r:tz	0
+cell_i/hand_l:tx	0	cc80
+cell_i/hand_l:ty	0	cc81
+cell_i/hand_l:tz	0	cc82
+cell_i/hand_r:tx	0	cc83
+cell_i/hand_r:ty	0	cc84
+cell_i/hand_r:tz	0	cc85
 
