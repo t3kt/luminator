@@ -2,7 +2,7 @@ environment	localdev	networkdevtekt	asylumtest
 renderhost	localhost	192.168.1.110	localhost
 renderport	9500	9500	9500
 renderprotocol	reliablemsging	reliablemsging	reliablemsging
-ctrlhost	localhost	192.168.1.100	localhost
+ctrlhost	localhost	192.168.1.100	192.168.1.101
 ctrlport	9500	9500	9500
 ctrlprotocol	reliablemsging	reliablemsging	reliablemsging
 renderw	1280	1280	1280
