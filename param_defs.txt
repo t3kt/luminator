@@ -44,4 +44,3 @@ cell_h/hand_l:tz	0	cc72
 cell_h/hand_r:tx	0	cc73
 cell_h/hand_r:ty	0	cc74
 cell_h/hand_r:tz	0	cc75
-
