@@ -1,10 +1,10 @@
-name	default	midi
-cell_a/active	0	n0
+name	default	midi	osc
+cell_a/active	0	n0	stuff/things/active
 cell_a/activecount	0
 cell_a/activeplayer	0
-cell_a/hand_l:tx	0	cc0
+cell_a/hand_l:tx	0	cc0	stuff/things/param1
 cell_a/hand_l:ty	0	cc1
-cell_a/hand_l:tz	0	cc2
+cell_a/hand_l:tz	0	cc2	stuff/things/param3
 cell_a/hand_r:tx	0	cc3
 cell_a/hand_r:ty	0	cc4
 cell_a/hand_r:tz	0	cc5
@@ -13,11 +13,11 @@ cell_d/activecount	0
 cell_d/activeplayer	0
 cell_d/hand_l:tx	0	cc30
 cell_d/hand_l:ty	0	cc31
-cell_d/hand_l:tz	0	cc32
+cell_d/hand_l:tz	0	cc32	stuff/whatever/param3
 cell_d/hand_r:tx	0	cc33
 cell_d/hand_r:ty	0	cc34
 cell_d/hand_r:tz	0	cc35
-cell_f/active	0	n5
+cell_f/active	0	n5	etc/foo/param1
 cell_f/activecount	0
 cell_f/activeplayer	0
 cell_f/hand_l:tx	0	cc50

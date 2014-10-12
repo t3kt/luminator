@@ -9,7 +9,7 @@ renderw	1280	1280	1280
 renderh	720	720	720
 midictlout	1	1	1
 midictlin	1	1	1
-kinectymin	-.75	-.75	-1.5
+kinectymin	-.75	-.75	-.6
 kinectymax	.75	.75	0.5
 kinectpretransform	0	0	0
 kinectpretranslatex	0	0	0

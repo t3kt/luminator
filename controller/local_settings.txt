@@ -2,6 +2,7 @@ inputvals	/_/inputvals
 rootdir	..
 depthstream	/_/depthstream
 inputpoints	/_/inputpoints
+scaledinputpoints	/_/scaledinputpoints
 inputstatuses	/_/inputstatuses
 inputdeltas	/_/inputdeltas
 playerstatuses	/_/playerstatuses
