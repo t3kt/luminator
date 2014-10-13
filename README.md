@@ -3,11 +3,8 @@ It does stuff. It's awesome. It's also known as Kinetic Reflections.
 
 ## Input/Control System
 
-The input/control system takes input from the kinect, analyzes it, and sends it out to the other systems. It consists of the following sub-systems:
-
-* Input (Kinect)
-* Input Processing - takes input values and generates parameter values
-* Output - takes parameter values and transmits them to external systems through various protocols, including MIDI, OSC, and TouchDesigner native DAT protocol
+The input/control system takes input from the kinect, analyzes it, and sends it out to the other systems.
+See [Input and Control System Documentation](docs/Control.md)
 
 ## Renderer System(s)
 
