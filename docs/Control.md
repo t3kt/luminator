@@ -15,9 +15,9 @@ The input preprocessing subsystem takes the raw values coming from the Kinect an
 
 * Removing extraneous data channels - the input from the Kinect is _very_ verbose. Since the control processor only uses a subset of that data, the preprocessor excludes the unused channels.
 * Separating channels into categories:
-* * Statuses primarily indicate whether each point is being tracked, and how confident the Kinect is about the position. Statuses are treated as integer values, which only cook when the incoming data is actually changing.
-* * Points update on every frame, even if the values aren't changing. The cost of checking for modifications outweighs the cost of having OPs further downstream cook more frequently.
-* ...
+  * Statuses primarily indicate whether each point is being tracked, and how confident the Kinect is about the position. Statuses are treated as integer values, which only cook when the incoming data is actually changing.
+  * Points update on every frame, even if the values aren't changing. The cost of checking for modifications outweighs the cost of having OPs further downstream cook more frequently.
+* 
 
 ## Control processing
 
