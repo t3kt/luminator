@@ -1,12 +1,10 @@
 def replicate(comp, allops, newops, template, master):
-	prev = None
-	for c in allops:	
+	combine = op('combine_cells')
+	for con in combine.inputConnectors:
+		con.disconnect()
+	combine.inputConnectors[0].connect(op('bg').outputConnectors[0])
+	for c in allops:
 		c.par.clone = comp.par.master
 		c.par.externaltox = ''
-		if prev:
-			c.inputConnectors[1].disconnect()
-			c.inputConnectors[1].connect(prev.outputConnectors[0])
-		prev = c
-	if prev:
-		op('add_to_background').inputConnectors[1].connect(prev.outputConnectors[0])
+		c.outputConnectors[0].connect(combine)
 

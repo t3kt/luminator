@@ -8,19 +8,10 @@ def cook(scriptOP):
 	ybounds = scriptOP.par.value0y, scriptOP.par.value1y
 	zbounds = scriptOP.par.value0z, scriptOP.par.value1z
 	outbounds = 0, 1
-	playername = None
-	for i in range(playersin.numChans):
-		playerch = playersin[i]
-		if not playerch[0]:
-			continue
-		activecount += 1
-		if firstactive == 0:
-			firstactive = i
-			playername = playerch.name
-	scriptOP.appendChan('active')[0] = activecount > 0
-	scriptOP.appendChan('activecount')[0] = activecount
-	scriptOP.appendChan('activeplayer')[0] = firstactive
-	if activecount == 0:
+	playername = op('cell')[1, 'player'].val
+	active = playername is not None and playername != ''
+	scriptOP.appendChan('active')[0] = active
+	if not active:
 		addchan(scriptOP, 'hand_l:tx', 0)
 		addchan(scriptOP, 'hand_l:ty', 0)
 		addchan(scriptOP, 'hand_l:tz', 0)
