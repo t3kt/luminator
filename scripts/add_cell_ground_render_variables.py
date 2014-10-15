@@ -1,7 +1,6 @@
 def cook(dat):
 	dat.clear()
 	cellsin = dat.inputs[0]
-	pointsin = dat.inputs[1]
 	dat.appendRow(cellsin.row(0) + ['cellrenderw', 'cellrenderh', 'cellrendertx', 'cellrenderty'])
 	gridxrange = float(var('kinectxmin')), float(var('kinectxmax'))
 	gridzrange = float(var('kinectzmin')), float(var('kinectzmax'))
@@ -13,8 +12,8 @@ def cook(dat):
 		centerx, centerz = float(cellsin[i+1, 'centerx']), float(cellsin[i+1, 'centerz'])
 		cellrw = int(scale(sizex, [0, gridw], [0, renderw]))
 		cellrh = int(scale(sizez, [0, gridh], [0, renderh]))
-		celltx = int(scale(float(pointsin[i+1, 'P(0)']), [-1, 1], [-renderw/2, renderw/2]))
-		cellty = int(scale(float(pointsin[i+1, 'P(1)']), [-1, 1], [-renderh/2, renderh/2]))
+		celltx = int(scale(centerx, gridxrange, [-renderw/2, renderw/2]))
+		cellty = int(scale(centerz, gridzrange, [-renderh/2, renderh/2]))
 		dat.appendRow(cellsin.row(i+1)+[cellrw, cellrh, celltx, cellty])
 
 def scale(x, inrange, outrange):
