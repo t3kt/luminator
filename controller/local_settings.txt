@@ -10,3 +10,4 @@ activeplayers	/_/activeplayers
 players	/_/players
 kinectrecordings	/_/input/kinectrecordings
 properties	/_/properties
+cellstates	/_/cellstates
