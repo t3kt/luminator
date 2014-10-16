@@ -8,9 +8,9 @@ def cook(scriptOP):
 	zbounds = scriptOP.par.value0z, scriptOP.par.value1z
 	playername = op('cell')[1, 'player'].val
 	active = 1 if playername else 0
-	scriptOP.appendChan('active')[0] = active
 	if not active:
 		return
+	scriptOP['active'][0] = active
 	scriptOP['hand_l:tx'][0] = scale(handsin[playername + '/hand_l:tx'], xbounds)
 	scriptOP['hand_l:ty'][0] = scale(handsin[playername + '/hand_l:ty'], ybounds)
 	scriptOP['hand_l:tz'][0] = scale(handsin[playername + '/hand_l:tz'], zbounds)
