@@ -2,7 +2,7 @@ changing_parts = ['centerx', 'centerz', 'xmin', 'xmax', 'zmin', 'zmax']
 
 def init(cell_defs, cell_states, cell_state_vals):
     cell_states.clear()
-    cell_states.appendRow(['id', 'active', 'player'] + changing_parts)
+    cell_states.appendRow(['id', 'player', 'index'])
     #cell_state_vals.clear()
     #for part in changing_parts + ['active']:
     #    cell_state_vals.appendChan(part)
@@ -10,22 +10,22 @@ def init(cell_defs, cell_states, cell_state_vals):
     for i in range(1, cell_defs.numRows):
         cell_states.appendRow()
         cell_states[i, 'id'] = cell_defs[i, 'id']
-        cell_states[i, 'active'] = 0
+        #cell_states[i, 'active'] = 0
         #cell_state_vals['active'][i - 1] = 0
         cell_states[i, 'player'] = ''
-        for part in changing_parts:
-            #cell_state_vals[part][i - 1] = cell_defs[i, part]
-            cell_states[i, part] = cell_defs[i, part]
+        cell_states[i, 'index'] = i - 1
+        #for part in changing_parts:
+        #    cell_state_vals[part][i - 1] = cell_defs[i, part]
 
 def update(cell_defs, cell_def_vals, cell_states, cell_state_vals, points, players_active):
     for cell_index in range(1, cell_states.numRows):
         cell_id = cell_states[cell_index, 'id'].val
-        active = int(cell_states[cell_index, 'active'])
+        active = int(cell_state_vals['active'][cell_index - 1])
         if active:
             player_id = cell_states[cell_index, 'player']
             if not players_active[player_id][0]:
                 deactivate_cell(cell_def_vals, cell_states, cell_state_vals, cell_id)
-                update_inactive_cell(cell_defs, cell_def_vals, cell_states, cell_state_vals, cell_index, points)
+                pass
             else:
                 update_active_cell(cell_def_vals, cell_states, cell_state_vals, cell_index, points)
         else:
@@ -34,7 +34,7 @@ def update(cell_defs, cell_def_vals, cell_states, cell_state_vals, points, playe
                 activate_cell(cell_states, cell_state_vals, cell_index, player_id)
                 update_active_cell(cell_def_vals, cell_states, cell_state_vals, cell_index, points)
             else:
-                update_inactive_cell(cell_defs, cell_def_vals, cell_states, cell_state_vals, cell_index, points)
+                pass
 
 def get_player_in_cell(points, players_active, cell_def_vals, cell_index):
     xmin, xmax = cell_def_vals['xmin'][cell_index - 1], cell_def_vals['xmax'][cell_index - 1]
@@ -54,30 +54,18 @@ def get_player_position(points, player_id):
 
 def activate_cell(cell_states, cell_state_vals, cell_index, player_id):
     cell_states[cell_index, 'player'] = player_id
-    cell_states[cell_index, 'active'] = 1
     cell_state_vals['active'][cell_index - 1] = 1
 
 def update_active_cell(cell_def_vals, cell_states, cell_state_vals, cell_index, points):
     player_id = cell_states[cell_index, 'player']
     px, pz = get_player_position(points, player_id)
     sizex, sizez = cell_def_vals['sizex'][cell_index - 1], cell_def_vals['sizez'][cell_index - 1]
-    cell_states[cell_index, 'centerx'], cell_states[cell_index, 'centerz'] = px, pz
-    cell_states[cell_index, 'xmin'], cell_states[cell_index, 'xmax'] = px - (sizex / 2), px + (sizex / 2)
-    cell_states[cell_index, 'zmin'], cell_states[cell_index, 'zmax'] = pz - (sizez / 2), pz + (sizez / 2)
-    #
     cell_state_vals['centerx'][cell_index - 1], cell_state_vals['centerz'][cell_index - 1] = px, pz
     cell_state_vals['xmin'][cell_index - 1], cell_state_vals['xmax'][cell_index - 1] = px - (sizex / 2), px + (sizex / 2)
     cell_state_vals['zmin'][cell_index - 1], cell_state_vals['zmax'][cell_index - 1] = pz - (sizez / 2), pz + (sizez / 2)
-    pass
 
 def deactivate_cell(cell_def_vals, cell_states, cell_state_vals, cell_index):
     cell_states[cell_index, 'player'] = ''
-    cell_states[cell_index, 'active'] = 0
     cell_state_vals['active'][cell_index - 1] = 0
     for part in ['xmin', 'xmax', 'zmin', 'zmax', 'centerx', 'centerz']:
-        cell_states[cell_index, part] = cell_def_vals[part][cell_index - 1]
         cell_state_vals[part][cell_index - 1] = cell_def_vals[part][cell_index - 1]
-
-def update_inactive_cell(cell_defs, cell_def_vals, cell_states, cell_state_vals, cell_index, points):
-    pass
-
