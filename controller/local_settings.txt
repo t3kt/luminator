@@ -11,6 +11,7 @@ players	/_/players
 kinectrecordings	/_/input/kinectrecordings
 properties	/_/properties
 cellstates	/_/cellstates
+cellstatevals	/_/cellstatevals
 spinefilterwidth	.5
 spinefilteramount	1
 handfilterwidth	.1
