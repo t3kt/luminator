@@ -1,5 +1,7 @@
 def cook(scriptOP):
-	scriptOP.clear()
+	if not scriptOP['hand_l:tx']:
+		chop.clear()
+		chop.copy(op('defaults'))
 	playersin = scriptOP.inputs[0]
 	handsin = scriptOP.inputs[1]
 	activecount = 0
@@ -9,19 +11,16 @@ def cook(scriptOP):
 	zbounds = scriptOP.par.value0z, scriptOP.par.value1z
 	outbounds = 0, 1
 	playername = op('cell')[1, 'player'].val
-	active = playername is not None and playername != ''
+	active = 1 if playername else 0
 	scriptOP.appendChan('active')[0] = active
 	if not active:
 		return
-	addchan(scriptOP, 'hand_l:tx', handsin[playername + '/hand_l:tx'], xbounds, outbounds)
-	addchan(scriptOP, 'hand_l:ty', handsin[playername + '/hand_l:ty'], ybounds, outbounds)
-	addchan(scriptOP, 'hand_l:tz', handsin[playername + '/hand_l:tz'], zbounds, outbounds)
-	addchan(scriptOP, 'hand_r:tx', handsin[playername + '/hand_r:tx'], xbounds, outbounds)
-	addchan(scriptOP, 'hand_r:ty', handsin[playername + '/hand_r:ty'], ybounds, outbounds)
-	addchan(scriptOP, 'hand_r:tz', handsin[playername + '/hand_r:tz'], zbounds, outbounds)
+	scriptOP['hand_l:tx'] = scale(handsin[playername + '/hand_l:tx'], xbounds)
+	scriptOP['hand_l:ty'] = scale(handsin[playername + '/hand_l:ty'], ybounds)
+	scriptOP['hand_l:tz'] = scale(handsin[playername + '/hand_l:tz'], zbounds)
+	scriptOP['hand_r:tx'] = scale(handsin[playername + '/hand_r:tx'], xbounds)
+	scriptOP['hand_r:ty'] = scale(handsin[playername + '/hand_r:ty'], ybounds)
+	scriptOP['hand_r:tz'] = scale(handsin[playername + '/hand_r:tz'], zbounds)
 
-def addchan(chop, name, val, inrange, outrange):
-	chop.appendChan(name)[0] = scale(val, inrange, outrange)
-
-def scale(x, inrange, outrange):
-	return (x-inrange[0])*(outrange[1]-outrange[0])/(inrange[1] - inrange[0]) + outrange[0]
+def scale(x, inrange):
+	return (x - inrange[0])/(inrange[1] - inrange[0])
