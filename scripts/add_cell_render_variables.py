@@ -2,7 +2,7 @@ def cook(dat):
 	dat.clear()
 	cellsin = dat.inputs[0]
 	celldefs = dat.inputs[1]
-	cellstatevals = op(var('cellstatevals'))
+	cellstatevals = op('cellstatevals')
 	dat.appendRow(cellsin.row(0) + ['cellrenderw', 'cellrenderh', 'cellrendertx', 'cellrenderty'])
 	gridxrange = float(var('kinectxmin')), float(var('kinectxmax'))
 	gridzrange = float(var('kinectzmin')), float(var('kinectzmax'))
