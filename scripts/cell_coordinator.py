@@ -24,7 +24,7 @@ def update(cell_defs, cell_def_vals, cell_states, cell_state_vals, points, playe
         if active:
             player_id = cell_states[cell_index, 'player']
             if not players_active[player_id][0]:
-                deactivate_cell(cell_def_vals, cell_states, cell_state_vals, cell_id)
+                deactivate_cell(cell_def_vals, cell_states, cell_state_vals, cell_index)
                 pass
             else:
                 update_active_cell(cell_def_vals, cell_states, cell_state_vals, cell_index, points)
