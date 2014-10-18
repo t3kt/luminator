@@ -3,7 +3,15 @@ def cook(scriptOP):
 		scriptOP.clear()
 		scriptOP.copy(op('defaults'))
 	pointsin = scriptOP.inputs[0]
-	cellplayer = scriptOP.inputs[1]['activeplayer'].eval()
+	cellplayerin = scriptOP.inputs[1]
+	if not cellplayerin:
+		print('!!!! cellplayer input not found!!!!')
+		return
+	cellplayerchan = cellplayerin['activeplayer']
+	if not cellplayerchan:
+		print('!!!! cellplayer channel not found!!!!')
+		return	
+	cellplayer = cellplayerchan[0]
 	xbounds = scriptOP.par.value0x, scriptOP.par.value1x
 	ybounds = scriptOP.par.value0y, scriptOP.par.value1y
 	zbounds = scriptOP.par.value0z, scriptOP.par.value1z
