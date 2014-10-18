@@ -5,7 +5,7 @@ def cook(scriptOP):
 	scriptOP.clear()
 	scriptOP.numSamples = cells.numSamples
 	cell_players = [get_player_in_cell(players, points, cells, i) for i in range(cells.numSamples)]
-	ch = scriptOP.appendChan('activeplayer').vals = cell_players
+	scriptOP.appendChan('activeplayer').vals = cell_players
 
 def get_player_in_cell(players, points, cells, cell_index):
 	xmin, xmax = cells['xmin'][cell_index], cells['xmax'][cell_index]
