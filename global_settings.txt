@@ -19,7 +19,7 @@ renderw	1280
 renderh	720
 kinectplayers	p[1-6]
 kinectjoints	head spine hand_[lr] ankle_[lr]
-kinectstatuses	{kinectplayers}/id {kinectplayers}/spine_tracked {kinectplayers}/hand_[lr]_tracked
+kinectstatuses	{kinectplayers}/spine_tracked {kinectplayers}/hand_[lr]_tracked
 kinectpoints	{kinectplayers}/spine:t[xyz] {kinectplayers}/hand_[lr]:t[xyz]
 derezheight	24
 derezwidth	96
