@@ -1,8 +1,8 @@
 environment	localdev
-renderhost	localhost
+renderhost	192.168.1.100
 renderport	9500
 renderprotocol	reliablemsging
-ctrlhost	localhost
+ctrlhost	192.168.1.101
 ctrlport	9500
 ctrlprotocol	reliablemsging
 cells	/_/core/cells
@@ -23,3 +23,21 @@ kinectstatuses	{kinectplayers}/spine_tracked {kinectplayers}/hand_[lr]_tracked
 kinectpoints	{kinectplayers}/spine:t[xyz] {kinectplayers}/hand_[lr]:t[xyz]
 derezheight	24
 derezwidth	96
+midictlin	1
+midictlout	1
+kinectxmin	-1.9
+kinectxmax	1.9
+kinectzmin	.8
+kinectzmax	3.9
+kinectymin	-.6
+kinectymax	0.5
+kinectpretransform	0
+kinectpretranslatex	0
+kinectpretranslatey	0
+kinectpretranslatez	0
+kinectprerotatex	0
+kinectprerotatey	0
+kinectprerotatez	0
+kinectprescalex	1
+kinectprescaley	1
+kinectprescalez	1
