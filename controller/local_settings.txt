@@ -10,8 +10,6 @@ activeplayers	/_/activeplayers
 players	/_/players
 kinectrecordings	/_/input/kinectrecordings
 properties	/_/properties
-cellstates	/_/cellstates
-cellstatevals	/_/cellstatevals
 cellvals	/_/cellvals
 spinefilterwidth	.5
 spinefilteramount	1
