@@ -1,46 +1,47 @@
 name	osc
-cell_a/active	xyz/foooo
+cell_a/active	layer4/bypassed
 cell_a/activecount	
 cell_a/activeplayer	
-cell_a/hand_l:tx	stuff/things/param1
-cell_a/hand_l:ty	
-cell_a/hand_l:tz	stuff/things/param3
-cell_a/hand_r:tx	
-cell_a/hand_r:ty	
+cell_a/hand_l:tx	
+cell_a/hand_l:ty	layer4/video/scale/values
+cell_a/hand_l:tz	
+cell_a/hand_r:tx	layer4/video/positionx/values
+cell_a/hand_r:ty	layer4/video/positiony/values
 cell_a/hand_r:tz	
-cell_d/active	
+cell_d/active	layer3/bypassed
 cell_d/activecount	
 cell_d/activeplayer	
-cell_d/hand_l:tx	
-cell_d/hand_l:ty	
-cell_d/hand_l:tz	stuff/whatever/param3
-cell_d/hand_r:tx	
-cell_d/hand_r:ty	
+cell_d/hand_l:tx	layer3/video/effect1/param1/values
+cell_d/hand_l:ty	layer3/video/effect1/param4/speed
+cell_d/hand_l:tz	
+cell_d/hand_r:tx	layer3/video/effect1/param2/values
+cell_d/hand_r:ty	layer3/video/effect1/param3/values
 cell_d/hand_r:tz	
-cell_f/active	etc/foo/param1
+cell_f/active	layer2/video/effect1/bypassed
+cell_f/active1	layer2/video/effect2/bypassed
 cell_f/activecount	
 cell_f/activeplayer	
-cell_f/hand_l:tx	
-cell_f/hand_l:ty	
+cell_f/hand_l:tx	layer2/video/effect2/param2/values
+cell_f/hand_l:ty	layer2/video/effect2/param1/values
 cell_f/hand_l:tz	
-cell_f/hand_r:tx	
-cell_f/hand_r:ty	
+cell_f/hand_r:tx	layer2/video/effect1/param1/values
+cell_f/hand_r:ty	layer2/video/effect1/param2/values
 cell_f/hand_r:tz	
-cell_g/active	
+cell_g/active	layer1/video/effect1/bypassed
 cell_g/activecount	
 cell_g/activeplayer	
-cell_g/hand_l:tx	
-cell_g/hand_l:ty	
+cell_g/hand_l:tx	layer1/video/effect2/param3/values
+cell_g/hand_l:ty	layer1/video/effect2/param2/values
 cell_g/hand_l:tz	
-cell_g/hand_r:tx	
-cell_g/hand_r:ty	
+cell_g/hand_r:tx	layer1/video/effect2/param7/values
+cell_g/hand_r:ty	layer1/video/effect2/param1/values
 cell_g/hand_r:tz	
-cell_h/active	
+cell_h/active	layer1/video/effect2/bypassed
 cell_h/activecount	
 cell_h/activeplayer	
-cell_h/hand_l:tx	
-cell_h/hand_l:ty	
+cell_h/hand_l:tx	layer1/video/effect1/param2/speed
+cell_h/hand_l:ty	layer1/video/effect1/param1/values
 cell_h/hand_l:tz	
-cell_h/hand_r:tx	
-cell_h/hand_r:ty	
+cell_h/hand_r:tx	layer1/video/effect1/param4/speed
+cell_h/hand_r:ty	layer1/video/effect1/param3/values
 cell_h/hand_r:tz	
