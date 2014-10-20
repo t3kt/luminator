@@ -2,7 +2,7 @@ name	osc
 cell_a/active	layer4/bypassed
 cell_a/activecount	
 cell_a/activeplayer	
-cell_a/hand_l:tx	
+cell_a/hand_l:tx	layer4/video/effect3/param2/values
 cell_a/hand_l:ty	layer4/video/scale/values
 cell_a/hand_l:tz	
 cell_a/hand_r:tx	layer4/video/positionx/values
