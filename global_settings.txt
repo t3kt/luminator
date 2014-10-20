@@ -16,7 +16,7 @@ contentdir	{rootdir}/content
 scriptsdir	{rootdir}/scripts
 componentsdir	{rootdir}/components
 renderw	1280
-renderh	720
+renderh	1024
 kinectplayers	p[1-6]
 kinectjoints	head spine hand_[lr] ankle_[lr]
 kinectstatuses	{kinectplayers}/spine_tracked {kinectplayers}/hand_[lr]_tracked
