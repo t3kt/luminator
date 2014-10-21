@@ -1,10 +1,10 @@
 name	r	g	b	a
-celldotcolor	0.124	0.6204	1	1
 cellbordercolor	0.18634	0.605	0.3258933	1
 cellactivebordercolor	0.2166667	1	0	1
+celldotcolor	0.124	0.6204	1	1
 p1color	0.103	0.4917001	1	1
-p3color	0.7366666	0.21	1	1
 p2color	0.124	1	0.7518001	1
+p3color	0.7366666	0.21	1	1
 p4color	0.327927	0.843	0.6541399	1
 p5color	0.498039	0.8661438	1	1
 p6color	1	0.222	0.8832999	1
