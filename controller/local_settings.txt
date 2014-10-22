@@ -12,6 +12,7 @@ kinectrecordings	/_/input/kinectrecordings
 properties	/_/properties
 cellvals	/_/cellvals
 colorvars	/_/colorvars
+modifiedparamvals	/_/modifiedparamvals
 spinefilterwidth	.5
 spinefilteramount	1
 handfilterwidth	.1
