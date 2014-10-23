@@ -1,46 +1,47 @@
 name	default	midi	osc
-cell_a/active	0	n0	stuff/things/active
-cell_a/activecount	0
-cell_a/activeplayer	0
-cell_a/hand_l:tx	0	cc0	stuff/things/param1
-cell_a/hand_l:ty	0	cc1
-cell_a/hand_l:tz	0	cc2	stuff/things/param3
-cell_a/hand_r:tx	0	cc3
-cell_a/hand_r:ty	0	cc4
-cell_a/hand_r:tz	0	cc5
-cell_d/active	0	n3
-cell_d/activecount	0
-cell_d/activeplayer	0
-cell_d/hand_l:tx	0	cc30
-cell_d/hand_l:ty	0	cc31
-cell_d/hand_l:tz	0	cc32	stuff/whatever/param3
-cell_d/hand_r:tx	0	cc33
-cell_d/hand_r:ty	0	cc34
-cell_d/hand_r:tz	0	cc35
-cell_f/active	0	n5	etc/foo/param1
-cell_f/activecount	0
-cell_f/activeplayer	0
-cell_f/hand_l:tx	0	cc50
-cell_f/hand_l:ty	0	cc51
-cell_f/hand_l:tz	0	cc52
-cell_f/hand_r:tx	0	cc53
-cell_f/hand_r:ty	0	cc54
-cell_f/hand_r:tz	0	cc55
-cell_g/active	0	n6
-cell_g/activecount	0
-cell_g/activeplayer	0
-cell_g/hand_l:tx	0	cc60
-cell_g/hand_l:ty	0	cc61
-cell_g/hand_l:tz	0	cc62
-cell_g/hand_r:tx	0	cc63
-cell_g/hand_r:ty	0	cc64
-cell_g/hand_r:tz	0	cc65
-cell_h/active	0	n7
-cell_h/activecount	0
-cell_h/activeplayer	0
-cell_h/hand_l:tx	0	cc70
-cell_h/hand_l:ty	0	cc71
-cell_h/hand_l:tz	0	cc72
-cell_h/hand_r:tx	0	cc73
-cell_h/hand_r:ty	0	cc74
-cell_h/hand_r:tz	0	cc75
+cell_a/active	0	n0	layer4/bypassed
+cell_a/activecount	0		
+cell_a/activeplayer	0		
+cell_a/hand_l:tx	0	cc0	layer4/video/effect3/param2/values
+cell_a/hand_l:ty	0	cc1	layer4/video/scale/values
+cell_a/hand_l:tz	0	cc2	
+cell_a/hand_r:tx	0	cc3	layer4/video/positionx/values
+cell_a/hand_r:ty	0	cc4	layer4/video/positiony/values
+cell_a/hand_r:tz	0	cc5	
+cell_d/active	0	n3	layer3/bypassed
+cell_d/activecount	0		
+cell_d/activeplayer	0		
+cell_d/hand_l:tx	0	cc30	layer3/video/effect1/param1/values
+cell_d/hand_l:ty	0	cc31	layer3/video/effect1/param4/speed
+cell_d/hand_l:tz	0	cc32	
+cell_d/hand_r:tx	0	cc33	layer3/video/effect1/param2/values
+cell_d/hand_r:ty	0	cc34	layer3/video/effect1/param3/values
+cell_d/hand_r:tz	0	cc35	
+cell_f/active	0	n5	layer2/video/effect1/bypassed
+cell_f/active1	0		layer2/video/effect2/bypassed
+cell_f/activecount	0		
+cell_f/activeplayer	0	cc50	
+cell_f/hand_l:tx	0	cc51	layer2/video/effect2/param2/values
+cell_f/hand_l:ty	0	cc52	layer2/video/effect2/param1/values
+cell_f/hand_l:tz	0	cc53	
+cell_f/hand_r:tx	0	cc54	layer2/video/effect1/param1/values
+cell_f/hand_r:ty	0	cc55	layer2/video/effect1/param2/values
+cell_f/hand_r:tz	0	n6	
+cell_g/active	0		layer1/video/effect1/bypassed
+cell_g/activecount	0		
+cell_g/activeplayer	0	cc60	
+cell_g/hand_l:tx	0	cc61	layer1/video/effect2/param3/values
+cell_g/hand_l:ty	0	cc62	layer1/video/effect2/param2/values
+cell_g/hand_l:tz	0	cc63	
+cell_g/hand_r:tx	0	cc64	layer1/video/effect2/param7/values
+cell_g/hand_r:ty	0	cc65	layer1/video/effect2/param1/values
+cell_g/hand_r:tz	0	n7	
+cell_h/active	0		layer1/video/effect2/bypassed
+cell_h/activecount	0		
+cell_h/activeplayer	0	cc70	
+cell_h/hand_l:tx	0	cc71	layer1/video/effect1/param2/speed
+cell_h/hand_l:ty	0	cc72	layer1/video/effect1/param1/values
+cell_h/hand_l:tz	0	cc73	
+cell_h/hand_r:tx	0	cc74	layer1/video/effect1/param4/speed
+cell_h/hand_r:ty	0	cc75	layer1/video/effect1/param3/values
+cell_h/hand_r:tz			
