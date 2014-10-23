@@ -14,3 +14,4 @@ spinefilterwidth	.5
 spinefilteramount	1
 handfilterwidth	.1
 handfilteramount	.5
+spinescalefactor	1.2
