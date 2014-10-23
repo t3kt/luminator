@@ -28,7 +28,7 @@ def cook(params):
 	players = params.inputs[2]
 	cellvals = params.inputs[3]
 	cellnames = cells.col('id')[1:]
-	for cell_index in range(len(cellnames)):
+	for cell_index in range(0, len(cellnames)):
 		cell = cellnames[cell_index].val
 		xminmax, zminmax = cell_bounds(cellvals, cell_index)
 		player = get_player_in_cell(players, points, xminmax, zminmax, cell)
@@ -36,7 +36,7 @@ def cook(params):
 			params[cell + '/active'][0] = 0
 			params[cell + '/player'][0] = -1
 		else:
-			playername = 'p' + str(cell_index + 1)
+			playername = 'p' + str(player + 1)
 			params[cell + '/active'][0] = 1
 			params[cell + '/player'][0] = player
 			for part in cellpointparts:
@@ -53,7 +53,6 @@ def get_player_in_cell(players, points, xminmax, zminmax, cellname):
 		if player[0]:
 			px, pz = points[player.name + '/spine:tx'][0], points[player.name + '/spine:tz'][0]
 			incell = xminmax[0] <= px < xminmax[1] and zminmax[0] <= pz < zminmax[1]
-			#print('cell', cellname, 'player', player.name, 'x,z:', (px, pz), 'xmin,xmax:', xminmax, 'zmin,zmax:', zminmax, 'IN CELL!' if incell else 'not in cell')
 			if incell:
 				return player_index
 	return -1
