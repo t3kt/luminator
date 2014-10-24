@@ -12,6 +12,6 @@ colorvars	/_/colorvars
 modifiedparamvals	/_/modifiedparamvals
 spinefilterwidth	.5
 spinefilteramount	1
-handfilterwidth	.1
+handfilterwidth	.3
 handfilteramount	.5
 spinescalefactor	1.4
