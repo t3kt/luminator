@@ -2,6 +2,9 @@ environment	localdev
 renderhost	192.168.1.100
 renderport	9500
 renderprotocol	reliablemsging
+oscrenderhost	192.168.1.100
+oscrenderport	7000
+oscrenderprotocol	msging
 ctrlhost	192.168.1.101
 ctrlport	9500
 ctrlmodifiedport	9505

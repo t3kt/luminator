@@ -2,11 +2,8 @@ inputvals	/_/inputvals
 rootdir	..
 depthstream	/_/depthstream
 inputpoints	/_/inputpoints
-scaledinputpoints	/_/scaledinputpoints
 inputstatuses	/_/inputstatuses
-inputdeltas	/_/inputdeltas
 playerstatuses	/_/playerstatuses
-activeplayers	/_/activeplayers
 players	/_/players
 kinectrecordings	/_/input/kinectrecordings
 properties	/_/properties
@@ -15,5 +12,6 @@ colorvars	/_/colorvars
 modifiedparamvals	/_/modifiedparamvals
 spinefilterwidth	.5
 spinefilteramount	1
-handfilterwidth	.1
+handfilterwidth	.3
 handfilteramount	.5
+spinescalefactor	1.4
