@@ -5,11 +5,11 @@ renderprotocol	reliablemsging
 oscrenderhost	192.168.1.100
 oscrenderport	7000
 oscrenderprotocol	msging
-ctrlhost	192.168.1.101
+ctrlhost	192.168.1.116
 ctrlport	9500
 ctrlmodifiedport	9505
 ctrlprotocol	reliablemsging
-audiohost	192.168.1.102
+audiohost	192.168.1.101
 audioport	9600
 audioprotocol	reliablemsging
 cells	/_/core/cells
